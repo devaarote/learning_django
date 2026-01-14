@@ -16,7 +16,9 @@ def result(request):
 
 def student(request):
     date=datetime.datetime.today()
-    snm="Devendra Arote"
-    smarks=95
-    
-    return render(request,'testapp/student.html')
+    sname="Devendra Arote"
+    sage=21
+    sgrade="A+"
+
+    my_dict={'dt':date,'sname':sname,'sage':sage,'sgrade':sgrade}
+    return render(request,'testapp/student.html',my_dict)
