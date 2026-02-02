@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+        <style>
+        table {
+            border-collapse: collapse;
+            width: 70%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Students Information</h2>
+
+<table>
+    <tr>
+        <th>studid</th>
+        <th>studnumber</th>
+        <th>studname</th>
+        <th>studsalary</th>
+    </tr>
+
+    {% for e in emp %}
+    <tr>
+        <td>{{ s.id }}</td>
+        <td>{{ s.eno }}</td>
+        <td>{{ s.ename }}</td>
+        <td>{{ s.esal }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+</body>
+</html>
